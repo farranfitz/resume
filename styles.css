@@ -78,7 +78,7 @@ a:hover{
   align-items: flex-start;
 }
 
-.block1, .block2 {
+.block1, .block2, .block3, .block4 {
   width:30%;
   text-align: right;
   vertical-align: top;
@@ -86,21 +86,14 @@ a:hover{
   margin: .1em 0;
 }
 
-.info1 {
-  padding-top: -1em;
-  padding-left: 1em;
-  margin: 1em 0;
-  border-left: 1px solid grey;
-    /*width:60%;*/
-}
-
-.info2 {
+.info1, .info2, .info3, .info4 {
   padding-top: -1em;
   padding-left: 1em;
   margin: 1em 0;
   border-left: 1px solid grey;
   width:60%;
 }
+
 
 .sticky {
   position: fixed;
