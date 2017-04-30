@@ -86,12 +86,20 @@ a:hover{
   margin: .1em 0;
 }
 
-.info1, .info2 {
+.info1 {
   padding-top: -1em;
   padding-left: 1em;
   margin: 1em 0;
   border-left: 1px solid grey;
-  /*width:60%;*/
+    /*width:60%;*/
+}
+
+.info2 {
+  padding-top: -1em;
+  padding-left: 1em;
+  margin: 1em 0;
+  border-left: 1px solid grey;
+  width:60%;
 }
 
 .sticky {
@@ -106,8 +114,8 @@ footer{
 	max-width: 1080px;
 	margin: 0 auto;
 }
-
 footer img{
 	filter: opacity(70%);
 }
+
 
