@@ -8,7 +8,8 @@ height = more.clientHeight
   // Hide content with CSS
 more.style.cssText = 'max-height:0; overflow:hidden;'
 
-button = document.createElement('button')
+button = document.createElement('a')
+button.setAttribute('href', '#')
 button.classList.add('show-more')
 button.innerHTML = 'Read more...'
   // Insert button after .more element
@@ -18,12 +19,14 @@ button = document.querySelector('.show-more');
 
 visible = false
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function(e) {
+  e.preventDefault()
   // If visible is set to false
   if (!visible) {
     button.innerHTML = 'Show less...'
     more.style.transition = 1 + 's'
-    more.style.maxHeight = height + 'px'
+    more.style.maxHeight = '2000px'
+    more.style.margin = 0
   } else {
     button.innerHTML = 'Read more...'
     more.style.maxHeight = 0
